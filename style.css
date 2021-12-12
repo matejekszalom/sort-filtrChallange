@@ -1,0 +1,115 @@
+body {
+  position: relative;
+  margin-right: 5px;
+}
+
+button {
+  background-color: #166122;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 6px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  margin-left: 5px;
+  align-content: space-between;
+}
+
+select {
+  width: 10%;
+  min-height: 15px;
+  width: 100%;
+  margin: 0 5px 5px 0;
+}
+
+.asc::after {
+  content: "▲";
+}
+
+.button {
+  display: flex;
+  position: relative;
+}
+
+.desc::after {
+  content: "▼";
+}
+
+.contentTable {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    align-items: right;
+    width: 100%;
+}
+
+.contentTable thead tr {
+  background-color: #166122;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contentTable th,
+.contentTable td {
+    padding: 12px 15px;
+}
+
+.contentTable tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.contentTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.contentTable tbody tr:last-child {
+    border-bottom: 2px solid #166122;
+}
+
+
+.menu {
+  align-content: space-around;
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 724px) {
+  body {
+    display: flex;
+  }
+
+  button {
+    margin: 0 5px 0 0;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .button {
+    width: fit-content;
+  }
+
+  .contentTable {
+    position: relative;
+    width: 100%;
+  }
+
+  .menu {
+    position: relative;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  .select {
+    flex-direction: column;
+  }
+
+  .table {
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SQUIZ</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="select">
+            <select id="filterCountries" ></select>
+            <select id="filterIndustries" class="custom-select"></select>
+        </div>
+        <div class="button">
+            <button id="clearButton">Clear </button>
+            <button id="sortByNameButton">Sort by name</button>
+            <button id="sortByNumberButton">Sort by number of employees</button>
+        </div>
+    </div>
+    <div class="table">
+        <table class="contentTable">
+            <thead id="thead">
+                <tr>
+                    <td class="name">Name</td>
+                    <td>Country</td>
+                    <td>Industry</td>
+                    <td class="number">Number of employees</td>
+                </tr>
+            </thead>
+            <tbody id="data"></tbody>
+        </table>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
